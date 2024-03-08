@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check List Loader</title>
+    <style>
+        .inspecao {
+            display: grid;
+            grid-auto-flow: column;
+            font-family: Arial, Helvetica, sans-serif;    
+            font-size: 20px;
+            color: black;   
+            margin-left: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .verif {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 150px auto;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .linha {
+            border: 1px solid black;
+    
+            
+        }
+        .input {
+            margin-right: 450px;
+            height: 100%;
+            width: 90%;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 90px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            
+        }
+
+        select {
+            width: 100px;
+            height: 100px;
+            margin-top: 50px;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 70px;
+            margin-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://formspree.io/f/xwkgqlgb" method="POST">
+    <div class="inspecao">
+        <label>Inspetor:</label>
+        <input class="input" placeholder="Digite seu Nome" type="text" required name="inspetor">
+        <label> Serial da Máquina:</label>
+        <input class="input" placeholder="Digite o serial da Máquina" type="text" required name="serial da máquina">
+    </div>
+
+    <!---Linha de Inpeção1-->
+    <div class="verif">
+        <div class="linha">
+            <h1>Inspeção 1</h1>
+        </div>
+        <div class="linha">
+            <h1>Verificar parafusos soltos dos Cardans</h1>
+        </div>
+        <div class="linha">
+            <ul>
+                <li><input value="OK" name="inspeção1" type="radio">OK</li> <br>
+                <li><input value="NOK" name="inspeção1" type="radio">NOK</li> <br>
+                <li><input value="N/A" name="inspeção1" type="radio">N/A</li> <br>
+            </ul>
+        </div>
+        <div class="linha">
+            <img src="/img.jpg/img1.png" alt="">
+        </div>
+    
+    </div>
+
+    <!---Linha de Inpeção2-->
+    <div class="verif">
+        <div class="linha">
+            <h1>Inspeção 2</h1>
+        </div>
+        <div class="linha">
+            <h1>Verificar folgas na cruzeta dos Cardans</h1>
+        </div>
+        <div class="linha">
+            <ul>
+                <li><input value="OK" name="inspeção2" type="radio">OK</li> <br>
+                <li><input value="NOK" name="inspeção2" type="radio">NOK</li> <br>
+                <li><input value="N/A" name="inspeção2" type="radio">N/A</li> <br>
+            </ul>
+        </div>
+        <div class="linha">
+            <img src="/img.jpg/img1.png" alt="">
+        </div>
+    </div>
+
+    <!---Linha de Inpeção3-->
+    <div class="verif">
+        <div class="linha">
+            <h1>Inspeção 3</h1>
+        </div>
+        <div class="linha">
+            <h1>Verificar montagem correta da <br> posição do ventilado conforme FIA</h1>
+        </div>
+        <div class="linha">
+            <ul>
+                <li><input value="OK" name="inspeção3" type="radio">OK</li> <br>
+                <li><input value="NOK" name="inspeção3" type="radio">NOK</li> <br>
+                <li><input value="N/A" name="inspeção3" type="radio">N/A</li> <br>
+            </ul>
+        </div>
+        <div class="linha">
+            <img src="/img.jpg/img2.png" alt="">
+        </div>
+    </div>
+
+    <!---Linha de Inpeção4-->
+    <div class="verif">
+        <div class="linha">
+            <h1>Inspeção 4</h1>
+        </div>
+        <div class="linha">
+            <h1>Verificar há pontos danificados na hélice</h1>
+        </div>
+        <div class="linha">
+        <ul>
+            <li><input value="OK" name="inspeção4" type="radio">OK</li> <br>
+            <li><input value="NOK" name="inspeção4" type="radio">NOK</li> <br>
+            <li><input value="N/A" name="inspeção4" type="radio">N/A</li> <br>
+        </ul>
+        </div>
+        <div class="linha">
+            <img src="/img.jpg/img2.png" alt="">
+        </div>
+    </div>
+
+    <!---Botão-->
+    <button type="submit">Concluir Inspeção</button>
+
+    </form>
+</body>
+</html>
