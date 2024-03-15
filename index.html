@@ -8,8 +8,9 @@
     <style>
 
         body {
-            margin-left: 50px;
-            margin-right: 50px;
+            margin: 80px;
+            
+            
         }
 
         .inspecao {
@@ -21,6 +22,7 @@
             margin-left: 10px;
             margin-top: 20px;
             text-align: center;
+            width: 1425px;
         }
         .verif {
             display: grid;
@@ -107,8 +109,10 @@
             height: 80px;
             border-radius: 50px;
             font-size: 30px;
-            margin-top: 20px;
-            margin-left: 35%;
+            margin-top: 50px;
+            margin-left: 37.5%;
+            margin-bottom: 50px;
+            background-color: green;
         }
 
         #cabeça {
@@ -141,6 +145,15 @@
             font-size: 40px;
             margin-right: 20px;
         }
+
+        input[type=text] {
+            margin-left: 10px;
+            text-align: center;
+        }
+
+        label {
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -154,9 +167,9 @@
     <!--Identificação-->
         <form action="https://api.sheetmonkey.io/form/szC3rxyaNsSeNZfxf7fk5V" method="post">
     <div class="inspecao">
-        <label>Inspetor:</label>
+        <label> <b>Inspetor:</b> </label>
         <input class="input" placeholder="Digite seu Nome" type="text" required name="inspetor">
-        <label> Serial da Máquina:</label>
+        <label> <b> Serial da Máquina: </b> </label>
         <input class="input" placeholder="Digite o serial da Máquina" type="text" required name="serial da máquina">
         <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time"/>
     </div>
