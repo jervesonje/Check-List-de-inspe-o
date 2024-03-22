@@ -16,13 +16,13 @@
         .inspecao {
             display: grid;
             grid-auto-flow: column;
+            grid-auto-columns: auto;
             font-family: Arial, Helvetica, sans-serif;    
             font-size: 20px;
             color: black;   
-            margin-left: 10px;
             margin-top: 20px;
-            text-align: center;
-            width: 1425px;
+            margin-bottom: 50px;
+            
         }
         .verif {
             display: grid;
@@ -62,9 +62,8 @@
             
         }
         .input {
-            margin-right: 450px;
-            height: 100%;
-            width: 90%;
+            margin: 10px;
+            text-align: center;
         }
 
         h1 {
@@ -72,13 +71,6 @@
             margin-top: 50px;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 20px;
-            
-        }
-
-        select {
-            width: 100px;
-            height: 100px;
-            margin-top: 50px;
             
         }
 
@@ -147,13 +139,15 @@
         }
 
         input[type=text] {
-            margin-left: 10px;
-            text-align: center;
+            width: 90%;
+            height: 60%;
         }
 
-        label {
-            margin-top: 10px;
+        select {
+            height: 100%;
+            width: 100%;
         }
+
     </style>
 </head>
 <body>
@@ -166,13 +160,56 @@
 
     <!--Identificação-->
         <form action="https://api.sheetmonkey.io/form/szC3rxyaNsSeNZfxf7fk5V" method="post">
-    <div class="inspecao">
-        <label> <b>Inspetor:</b> </label>
-        <input class="input" placeholder="Digite seu Nome" type="text" required name="inspetor">
-        <label> <b> Serial da Máquina: </b> </label>
-        <input class="input" placeholder="Digite o serial da Máquina" type="text" required name="serial da máquina">
-        <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time"/>
-    </div>
+
+        <div class="inspecao">
+            <div class="input">
+                <label>Inspetor:</label>
+                <select name="inspetor" required>
+                    <option selected value="">SELECIONE SEU NOME</option>
+                    <option value="ANA">ANA</option>
+                    <option value="ARILSON">ARILSON</option>
+                    <option value="BRUNO MARQUES">BRUNO MARQUES</option>
+                    <option value="BRUNO SIMÕES">BRUNO SIMÕES</option>
+                    <option value="DAVID">DAVID</option>
+                    <option value="DÉBORA">DÉBORA</option>
+                    <option value="GERALDO">GERALDO</option>
+                    <option value="HECTOR">HECTOR</option>
+                    <option value="JEFERSON">JEFERSON</option>
+                    <option value="JÚLIO">JÚLIO</option>
+                    <option value="NICOLAS">NICOLAS</option>
+                    <option value="RODRIGO">RODRIGO</option>
+                    <option value="VALQUIR">VALQUIR</option>
+                    <option value="VINÍCIUOS">VINÍCIUOS</option>
+                    <option value="WILLIAN">WILLIAN</option>
+                </select>
+            </div>
+
+            <div class="input">
+                <label>Serial:</label>
+                <input class="input" placeholder="Digite o serial da Máquina" type="text" required name="serial da máquina">
+                <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time"/>
+            </div>
+
+            <div class="input">
+                <label>Modelo:</label>
+                <select name="modelo" required>
+                    <option value="BK">Backhoe</option>
+                    <option selected value="LD">Loader</option>
+                    <option value="MG">Motorgrader</option>
+                    <option value="CR">Crawler</option>
+                </select>
+            </div>
+
+            <div class="input">
+                <label>Inspeção:</label>
+                <select name="visual/funcional" required>
+                    <option selected value="">Selecione tipo de Inspeção</option>
+                    <option value="visual">Visual</option>
+                    <option value="funcional">Funcional</option>
+                </select>
+            </div>
+        
+        </div>
 
     <!---Linha de Inpeção1-->
     <div class="verif">
