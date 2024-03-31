@@ -106,6 +106,7 @@
             margin-left: 37.5%;
             margin-bottom: 50px;
             background-color: green;
+            color: white;
         }
 
         #cabeça {
@@ -180,7 +181,7 @@
                     <option value="NICOLAS">NICOLAS</option>
                     <option value="RODRIGO">RODRIGO</option>
                     <option value="VALQUIR">VALQUIR</option>
-                    <option value="VINÍCIUOS">VINÍCIUOS</option>
+                    <option value="VINÍCIUS">VINÍCIUS</option>
                     <option value="WILLIAN">WILLIAN</option>
                 </select>
             </div>
@@ -194,19 +195,14 @@
             <div class="input">
                 <label>Modelo:</label>
                 <select name="modelo" required>
-                    <option value="BK">Backhoe</option>
                     <option selected value="LD">Loader</option>
-                    <option value="MG">Motorgrader</option>
-                    <option value="CR">Crawler</option>
                 </select>
             </div>
 
             <div class="input">
                 <label>Inspeção:</label>
-                <select name="visual/funcional" required>
-                    <option selected value="">Selecione tipo de Inspeção</option>
-                    <option value="visual">Visual</option>
-                    <option value="funcional">Funcional</option>
+                <select name="visual/funcional/pdi" required>
+                    <option selected value="visual">Visual</option>
                 </select>
             </div>
         
@@ -222,9 +218,9 @@
         </div>
         <div class="linha3">
             <ul>
-                <li><input value="OK" name="inspeção1" type="radio">OK</li> <br>
-                <li><input value="NOK" name="inspeção1" type="radio">NOK</li> <br>
-                <li><input value="N/A" name="inspeção1" type="radio">N/A</li> <br>
+                <li><input required value="OK" name="inspeção1" type="radio">OK</li> <br>
+                <li><input required value="NOK" name="inspeção1" type="radio">NOK</li> <br>
+                <li><input required value="N/A" name="inspeção1" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -243,9 +239,9 @@
         </div>
         <div class="linha3">
             <ul>
-                <li><input value="OK" name="inspeção2" type="radio">OK</li> <br>
-                <li><input value="NOK" name="inspeção2" type="radio">NOK</li> <br>
-                <li><input value="N/A" name="inspeção2" type="radio">N/A</li> <br>
+                <li><input required value="OK" name="inspeção2" type="radio">OK</li> <br>
+                <li><input required value="NOK" name="inspeção2" type="radio">NOK</li> <br>
+                <li><input required value="N/A" name="inspeção2" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -263,9 +259,9 @@
         </div>
         <div class="linha3">
             <ul>
-                <li><input value="OK" name="inspeção3" type="radio">OK</li> <br>
-                <li><input value="NOK" name="inspeção3" type="radio">NOK</li> <br>
-                <li><input value="N/A" name="inspeção3" type="radio">N/A</li> <br>
+                <li><input required value="OK" name="inspeção3" type="radio">OK</li> <br>
+                <li><input required value="NOK" name="inspeção3" type="radio">NOK</li> <br>
+                <li><input required value="N/A" name="inspeção3" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -283,9 +279,9 @@
         </div>
         <div class="linha3">
         <ul>
-            <li><input value="OK" name="inspeção4" type="radio">OK</li> <br>
-            <li><input value="NOK" name="inspeção4" type="radio">NOK</li> <br>
-            <li><input value="N/A" name="inspeção4" type="radio">N/A</li> <br>
+            <li><input required value="OK" name="inspeção4" type="radio">OK</li> <br>
+            <li><input required value="NOK" name="inspeção4" type="radio">NOK</li> <br>
+            <li><input required value="N/A" name="inspeção4" type="radio">N/A</li> <br>
         </ul>
         </div>
         <div class="linha4">
@@ -303,9 +299,9 @@
         </div>
         <div class="linha3">
         <ul>
-            <li><input value="OK" name="inspeção5" type="radio">OK</li> <br>
-            <li><input value="NOK" name="inspeção5" type="radio">NOK</li> <br>
-            <li><input value="N/A" name="inspeção5" type="radio">N/A</li> <br>
+            <li><input required value="OK" name="inspeção5" type="radio">OK</li> <br>
+            <li><input required value="NOK" name="inspeção5" type="radio">NOK</li> <br>
+            <li><input required value="N/A" name="inspeção5" type="radio">N/A</li> <br>
         </ul>
         </div>
         <div class="linha4">
@@ -323,9 +319,9 @@
     </div>
     <div class="linha3">
     <ul>
-        <li><input value="OK" name="inspeção6" type="radio">OK</li> <br>
-        <li><input value="NOK" name="inspeção6" type="radio">NOK</li> <br>
-        <li><input value="N/A" name="inspeção6" type="radio">N/A</li> <br>
+        <li><input required value="OK" name="inspeção6" type="radio">OK</li> <br>
+        <li><input required value="NOK" name="inspeção6" type="radio">NOK</li> <br>
+        <li><input required value="N/A" name="inspeção6" type="radio">N/A</li> <br>
     </ul>
     </div>
     <div class="linha4">
@@ -343,9 +339,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção7" type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção7" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção7" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção7" type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção7" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção7" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -363,9 +359,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção8" type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção8" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção8" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção8" type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção8" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção8" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -383,9 +379,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção9" type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção9" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção9" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção9" type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção9" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção9" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -403,9 +399,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção10" type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção10" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção10" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção10" type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção10" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção10" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -423,9 +419,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção11" type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção11" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção11" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção11" type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção11" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção11" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -443,9 +439,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção12" type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção12" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção12" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção12" type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção12" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção12" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -463,9 +459,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção13" type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção13" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção13" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção13" type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção13" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção13" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -483,9 +479,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção14" type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção14" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção14" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção14" type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção14" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção14" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -503,9 +499,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção15" type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção15" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção15" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção15" type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção15" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção15" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -523,9 +519,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção16" type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção16" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção16" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção16" type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção16" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção16" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -543,9 +539,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção17" type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção17" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção17" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção17" type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção17" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção17" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -563,9 +559,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção18" type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção18" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção18" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção18" type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção18" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção18" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -583,9 +579,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção19" type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção19" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção19" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção19" type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção19" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção19" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -603,9 +599,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção20" type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção20" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção20" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção20" type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção20" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção20" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -623,9 +619,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção21" type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção21" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção21" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção21" type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção21" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção21" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -643,9 +639,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção22" type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção22" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção22" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção22" type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção22" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção22" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -663,9 +659,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção23" type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção23" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção23" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção23" type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção23" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção23" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -683,9 +679,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção24"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção24" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção24" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção24"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção24" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção24" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -703,9 +699,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção25"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção25" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção25" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção25"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção25" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção25" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -723,9 +719,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção26"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção26" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção26" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção26"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção26" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção26" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -743,9 +739,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção27"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção27" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção27" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção27"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção27" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção27" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -763,9 +759,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção28"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção28" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção28" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção28"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção28" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção28" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -783,9 +779,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção29"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção29" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção29" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção29"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção29" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção29" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -803,9 +799,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção30"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção30" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção30" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção30"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção30" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção30" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -823,9 +819,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção31"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção31" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção31" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção31"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção31" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção31" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -843,9 +839,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção32"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção32" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção32" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção32"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção32" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção32" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -863,9 +859,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção33"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção33" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção33" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção33"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção33" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção33" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -883,9 +879,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção34"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção34" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção34" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção34"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção34" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção34" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -903,9 +899,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção35"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção35" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção35" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção35"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção35" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção35" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -923,9 +919,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção36"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção36" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção36" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção36"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção36" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção36" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -943,9 +939,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção37"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção37" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção37" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção37"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção37" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção37" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -963,9 +959,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção38"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção38" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção38" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção38"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção38" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção38" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -984,9 +980,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção39"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção39" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção39" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção39"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção39" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção39" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -1007,9 +1003,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção40"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção40" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção40" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção40"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção40" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção40" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -1030,9 +1026,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção41"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção41" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção41" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção41"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção41" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção41" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -1050,9 +1046,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção42"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção42" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção42" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção42"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção42" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção42" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -1070,9 +1066,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção43"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção43" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção43" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção43"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção43" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção43" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -1090,9 +1086,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção44"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção44" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção44" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção44"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção44" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção44" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -1110,9 +1106,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção45"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção45" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção45" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção45"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção45" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção45" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -1130,9 +1126,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção46"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção46" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção46" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção46"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção46" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção46" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -1150,9 +1146,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção47"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção47" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção47" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção47"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção47" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção47" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -1170,9 +1166,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção48"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção48" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção48" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção48"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção48" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção48" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
@@ -1190,9 +1186,9 @@
         </div>
         <div class="linha3">
             <ul>
-             <li><input value="OK" name="inspeção49"type="radio">OK</li> <br>
-             <li><input value="NOK" name="inspeção49" type="radio">NOK</li> <br>
-             <li><input value="N/A" name="inspeção49" type="radio">N/A</li> <br>
+             <li><input required value="OK" name="inspeção49"type="radio">OK</li> <br>
+             <li><input required value="NOK" name="inspeção49" type="radio">NOK</li> <br>
+             <li><input required value="N/A" name="inspeção49" type="radio">N/A</li> <br>
             </ul>
         </div>
         <div class="linha4">
